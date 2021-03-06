@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-// import logo from "../logo.jpg";
+import logo from "../logo.png";
 //react font awesome import
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -9,10 +9,8 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-dark">
       <div className="container">
-        {/* <a className="navbar-brand" href="#"> */}
-        <a className="nav-link" href="#">
-          {/* <img src={logo} alt="logo..." className="logo" /> */}
-          Portofolio
+        <a className="nav-item" href="#">
+          <img src={logo} alt="logo..." className="logo" />
         </a>
         <button
           className="navbar-toggler"
@@ -23,7 +21,7 @@ function Navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <FontAwesomeIcon icon={faBars} style={{color: "white"}} />
+          <FontAwesomeIcon icon={faBars} style={{ color: "white" }} />
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
